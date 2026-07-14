@@ -16,6 +16,8 @@ public abstract class Personagem {
         this.poderBase = poderBase;
     }
 
+    public abstract void usarHabilidadeEspecial();
+
 //Método para imprimir as informções do personagem
     public void exibirStatus() {
         System.out.println("--- Status do Personagem ---");
