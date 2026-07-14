@@ -1,5 +1,5 @@
 
-public class Personagem {
+public abstract class Personagem {
     //Declaração das variáveis de instância
     String nome;
     String classe;
