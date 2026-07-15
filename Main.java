@@ -5,7 +5,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-//Instanciação dos objetos e atibuição à uma variável
+//Instanciação dos objetos e atribuição à uma variável
         Guerreiro guerreiro1 = new Guerreiro("Arthus", "Guerreiro", 5, 150, 12.0, 8.0);
         Mago mago1 = new Mago("Elenara", "Maga", 7, 100, 15.0, 10.0);
 
@@ -26,12 +26,13 @@ public class Main {
         //Adicionando personagens à lista
         herois.add(guerreiro1);
         herois.add(mago1);
+        //Instanciando e atribuindo os valores de um personagem
         herois.add(new Guerreiro("Borrim", "Guerreiro", 3, 120, 10.0, 6.0));
 
-
-        for (Personagem p : herois){
-            p.exibirStatus();
-            p.usarHabilidadeEspecial();
+//Itera na lista
+        for (Personagem heroi : herois){
+            heroi.exibirStatus();
+            heroi.usarHabilidadeEspecial();
             System.out.println("--------------------------");
         }
 
