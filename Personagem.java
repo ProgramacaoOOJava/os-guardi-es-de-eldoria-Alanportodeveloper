@@ -16,6 +16,7 @@ public abstract class Personagem {
         this.poderBase = poderBase;
     }
 
+//Método abstrato que deverá ser implementado pelas classes que herdar a classe
     public abstract void usarHabilidadeEspecial();
 
 //Método para imprimir as informções do personagem
