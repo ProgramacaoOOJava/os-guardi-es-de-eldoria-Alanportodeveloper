@@ -7,7 +7,7 @@ public Guerreiro(String nome, String classe, int nivel, int vida, double ataque)
 @Override
 public void usarHabilidadeEspecial(){
 
-    System.out.println(classe + nome + " ataca com Espada Flamejante!");
+    System.out.println(classe + " " + nome + " ataca com Espada Flamejante!");
 }
 
 }

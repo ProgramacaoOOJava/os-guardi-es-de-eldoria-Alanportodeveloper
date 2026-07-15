@@ -8,7 +8,7 @@ public Mago(String nome, String classe, int nivel, int vida, double ataque){
 @Override
 public void usarHabilidadeEspecial(){
 
-System.println(classe + nome + " lança Bola de Fogo!");
+System.out.println(classe + " " + nome + " lança Bola de Fogo!");
     
 }
 
