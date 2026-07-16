@@ -6,35 +6,28 @@ public class Main {
     public static void main(String[] args) {
 
 //Instanciação dos objetos e atribuição à uma variável
-        Guerreiro guerreiro1 = new Guerreiro("Arthus", "Guerreiro", 5, 150, 12.0, 8.0);
-        Mago mago1 = new Mago("Elenara", "Maga", 7, 100, 15.0, 10.0);
+        Guerreiro arthus = new Guerreiro("Arthus", "Guerreiro", 5, 150, 12.0, 8.0);
+        Mago elenara = new Mago("Elenara", "Maga", 7, 100, 15.0, 10.0);
+        Guerreiro borim = new Guerreiro("Borim", "Guerreiro", 3, 120, 10.0, 6.0);
+        Mago morgana = new Mago("Morgana", "Maga", 6, 90, 14.0, 9.0);
 
-//Chamada do método para exibir o staus
-        guerreiro1.exibirStatus();
-        mago1.exibirStatus();
+//Instanciando grupos e adicionando personagens a eles
+        Grupo grupo1 = new Grupo("Os vingadores");
+        grupo1.adicionarPersonagem(arthus);
+        grupo1.adicionarPersonagem(elenara);
 
-//Chamada do método para usar a habilidade especial
-        guerreiro1.usarHabilidadeEspecial();
-        mago1.usarHabilidadeEspecial();
+        Grupo grupo2 = new Grupo("Os magos");
+        grupo2.adicionarPersonagem(borim);
+        grupo2.adicionarPersonagem(morgana);
+
+        //Listando os membros dos grupos
+        grupo1.listarPersonagem();
+        grupo2.listarPersonagem();
 
 
-        System.out.print("\n\n--- Demostração de polimorfismo ---\n\n");
+//Simulação de batalhas entre grupos
+        
 
-//Criando uma lista de personagens
-        List<Personagem> herois = new ArrayList<>();
-
-        //Adicionando personagens à lista
-        herois.add(guerreiro1);
-        herois.add(mago1);
-        //Instanciando e atribuindo os valores de um personagem
-        herois.add(new Guerreiro("Borrim", "Guerreiro", 3, 120, 10.0, 6.0));
-
-//Itera na lista
-        for (Personagem heroi : herois){
-            heroi.exibirStatus();
-            heroi.usarHabilidadeEspecial();
-            System.out.println("--------------------------");
-        }
 
     }
 }
